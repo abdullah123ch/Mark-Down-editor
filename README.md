@@ -14,13 +14,12 @@ A simple and user-friendly Markdown editor built with Python and Tkinter. This a
 ## Installation
 
 1. **Clone the repository:**
-   
    ```
    git clone https://github.com/yourusername/markdown-editor.git
    cd markdown-editor
    ```
 
-2. **Install dependencies:**
+2. **Install dependencies:** 
    ```
    pip install -r requirements.txt
    ```
@@ -56,7 +55,7 @@ markdown-editor/
 
 ## Screenshots
 
-
+![Markdown Editor Preview](assets/preview.png)
 
 ## License
 
@@ -65,3 +64,5 @@ markdown-editor/
 ## Author
 
 abdullah123ch
+
+
