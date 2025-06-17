@@ -139,32 +139,22 @@ class MarkdownEditor:
 
     def update_preview(self, event=None):
         self.text_area.edit_modified(False)
-        self.text_area.tag_remove("divider", "1.0", tk.END)  # Clear existing tags
-
         md_text = self.text_area.get("1.0", tk.END)
-        lines = md_text.splitlines()
+        html_body = markdown.markdown(md_text, extensions=["fenced_code", "codehilite"])
 
-        for idx, line in enumerate(lines):
-            if line.strip() == "---":
-                tag_start = f"{idx+1}.0"
-                tag_end = f"{idx+1}.end"
-                self.text_area.tag_add("divider", tag_start, tag_end)
-
-        html = markdown.markdown(md_text)
         html = f"""
-        <div style='
+        <div style="
+            font-family: 'Segoe UI', sans-serif;
             font-size: 10px;
-            font-family: Segoe UI, sans-serif;
-            color: #333;
             line-height: 1.6;
-            padding: 8px;
-        '>
-        {html}
+            padding: 20px;
+            color: #333;
+            background-color: #ffffff;
+        ">
+            {html_body}
         </div>
         """
-
         self.preview.set_html(html)
-
 
     def toggle_theme(self):
         new_theme = "darkly" if self.current_theme == "flatly" else "flatly"

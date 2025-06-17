@@ -1,6 +1,6 @@
 - list of required packages/libraries for the project
 
-- ttkbootstrap
-- markdown
-- tkhtmlview
-- pdfkit
+ ttkbootstrap
+ markdown
+ tkhtmlview
+ pdfkit
