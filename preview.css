@@ -1,0 +1,13 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 20px;
+    color: #333;
+    background-color: white;
+}
+code, pre {
+    background: #f4f4f4;
+    padding: 4px;
+    border-radius: 4px;
+}

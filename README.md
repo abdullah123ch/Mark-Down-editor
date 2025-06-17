@@ -1,6 +1,6 @@
 # Markdown Editor
 
-A simple and user-friendly Markdown editor built with Python and Tkinter. This application allows you to write, edit, and preview Markdown documents in real time.
+A simple and user-friendly Markdown editor built with Python and PyQt5. This application allows you to write, edit, and preview Markdown documents in real time.
 
 ## Features
 
@@ -24,7 +24,7 @@ A simple and user-friendly Markdown editor built with Python and Tkinter. This a
    pip install -r requirements.txt
    ```
 
-3. **Ensure the `assets` folder exists** with all required images (e.g., `bold.png`, `italic.png`, etc.).
+3. **Ensure the `icons` folder exists** with all required images (e.g., `bold.png`, `italic.png`, etc.).
 
 4. **Make executable:** 
 
@@ -32,31 +32,31 @@ A simple and user-friendly Markdown editor built with Python and Tkinter. This a
    ```
    pip install pyinstaller
    ```
-   after this, simply run the batch file build.bat in terminal
+   after this, simply run the batch file `build.bat` in terminal
    ```
    build.bat
    ```
    After Running That
 
    - It will create a **dist/ folder**.
-   - Inside: **main.exe**← this is your full standalone app!
+   - Inside: **editor.exe**← this is your full standalone app!
 
 ## Usage
 
 Run the application with:
 ```
-python main.py
+python editor.py
 ```
 
 ## Folder Structure
 
 ```
 markdown-editor/
-├── assets/
+├── icons/
 │   ├── bold.png
 │   ├── italic.png
 │   └── ... (other toolbar icons)
-├── main.py
+├── editor.py
 ├── requirements.txt
 └── README.md
 ```
@@ -64,13 +64,13 @@ markdown-editor/
 ## Dependencies
 
 - Python 3.7+
-- Tkinter (included with Python)
-- ttkbootstrap
+- pdfkit 
+- pyqt5
 - markdown
 
 ## Screenshots
 
-![Markdown Editor Preview](assets/preview.png)
+![Markdown Editor Preview](icons/preview.png)
 
 ## License
 
