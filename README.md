@@ -11,7 +11,7 @@ A simple and user-friendly Markdown editor built with Python and PyQt5. This app
 - Syntax highlighting (optional, if implemented)
 - Cross-platform (Windows, macOS, Linux)
 
-## Installation
+## **Installation**
 
 1. **Clone the repository:**
    ```
