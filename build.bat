@@ -1,10 +1,11 @@
 @echo off
 echo Building MarkdownEditor...
 C:\Program Files\Python313\python.exe" -m pyinstaller --onefile --noconsole ^
---add-data "assets;assets" ^
+--add-data "icons;icons" ^
+--add-data "theme;theme" ^
 --icon=md.ico ^
 --name MarkdownEditor ^
-main.py
+editor.py
 echo Done!
 pause
 

@@ -41,7 +41,7 @@ class MarkdownTab(QWidget):
         self.preview.setHtml(full_html)
 
     def load_css(self):
-        path = "preview_dark.css" if QApplication.instance().property("theme") == "dark" else "preview.css"
+        path = "theme/preview_dark.css" if QApplication.instance().property("theme") == "dark" else "theme/preview.css"
         if os.path.exists(path):
             with open(path, "r", encoding="utf-8") as f:
                 return f.read()

@@ -24,7 +24,7 @@ A simple and user-friendly Markdown editor built with Python and PyQt5. This app
    pip install -r requirements.txt
    ```
 
-3. **Ensure the `icons` folder exists** with all required images (e.g., `bold.png`, `italic.png`, etc.).
+3. **Ensure the `icons` and  `theme` folders exists** with all required images(e.g., `bold.png`, `italic.png`, etc.) and css files.
 
 4. **Make executable:** 
 
@@ -58,6 +58,8 @@ markdown-editor/
 │   └── ... (other toolbar icons)
 ├── editor.py
 ├── requirements.txt
+├── preview_dark.css
+├── preview.css
 └── README.md
 ```
 
