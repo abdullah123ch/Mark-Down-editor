@@ -26,6 +26,21 @@ A simple and user-friendly Markdown editor built with Python and Tkinter. This a
 
 3. **Ensure the `assets` folder exists** with all required images (e.g., `bold.png`, `italic.png`, etc.).
 
+4. **Make executable:** 
+
+if u want to make it as an executable app and use it as an app, install pyinstaller by running in terminal:
+```
+pip install pyinstaller
+```
+after this, simply run the batch file build.bat in terminal
+```
+build.bat
+```
+After Running That
+
+- It will create a **dist/ folder**.
+- Inside: **main.exe**← this is your full standalone app!
+
 ## Usage
 
 Run the application with:
